@@ -129,7 +129,7 @@ nav {
     padding: 0;
     margin-left: 30px;
     border-radius: 50%;
-    background-color: var(--color-white-80);
+    background-color: var(--color-white-70);
     justify-content: center;
     align-items: center;
     transition-duration: 0.4s;
@@ -148,19 +148,19 @@ nav {
     fill: var(--color-white-80);
 }
 
-#mobile-menu {
+#mobile-menu ul {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 160px;
+    top: 150px;
     left: 0;
     width: 100%;
     text-align: center;
     padding: 10px;
-    background-color: var(--color-black-70);
+    background-color: var(--color-white-90);
 }
 
-#mobile-menu li {
+#mobile-menu ul li {
     padding: 10px;
 }
 
@@ -169,11 +169,26 @@ nav {
 }
 
 @media (max-width: 768px) {
-    #pc-menu {
+    #horizontal-navbar ul li {
         display: none;
     }
 
+    #horizontal-navbar ul #dkmdbt {
+        display: block;
+    }
+
+    #horizontal-navbar ul #vrmnbt {
+        display: block;
+    }
+
     #vertical-menu-button {
+        display: flex;
+    }
+
+    #mobile-menu ul {
+        display: flex;
+    }
+    #mobile-menu ul li {
         display: block;
     }
 
@@ -345,7 +360,7 @@ td[colspan] {
     padding: 0;
     margin-left: 30px;
     border-radius: 50%;
-    background-color: var(--color-white-80);
+    background-color: var(--color-white-70);
     display: flex;
     justify-content: center;
     align-items: center;
