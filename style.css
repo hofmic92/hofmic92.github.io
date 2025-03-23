@@ -305,12 +305,17 @@ button:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     background: #333;
     color: #fff;
     margin-top: 20px;
 }
-
+footer p {
+    margin: 8px;
+}
+footer p a {
+    color: var(--color-white-100);
+}
 /* Style for table */
 table {
     width: 100%;
